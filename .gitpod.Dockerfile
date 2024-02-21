@@ -33,6 +33,7 @@ RUN bash -c "mkdir -p '/tmp/oc' \
     && rm '/tmp/oc/openshift-client-linux.tar.gz' \
     "
 
+USER gitpod
 # Oracle Cloud CLI
 RUN bash -c "brew install oci-cli"
 
